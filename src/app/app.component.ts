@@ -6,10 +6,17 @@ import { RsvpComponent } from './sections/rsvp/rsvp.component';
 import { FooterComponent } from './sections/footer/footer.component';
 
 @Component({
+  standalone: true,
   selector: 'app-root',
-  imports: [WelcomeComponent, DetailsComponent, StoryComponent, RsvpComponent, FooterComponent],
+  imports: [
+    WelcomeComponent,
+    DetailsComponent,
+    StoryComponent,
+    RsvpComponent,
+    FooterComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'invitacion-boda';
